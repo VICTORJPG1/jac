@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #281139;
+  }
+  
+  .nav {
+    flex-direction: row;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .nav a {
+    padding-left: 12%;
+  }
+  
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    margin: 0 auto;
+    font-family: 'Jacques Francois', serif;
+  }
+  
+  header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    border: solid 1px #c0c0c0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 60px;
+  }
+  
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .logo {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: 5px;
+    color: rgb(14, 14, 14);
+    transition: 300ms;
+    text-decoration-color: rgb(14, 14, 14);
+  }
+
+  .logo:hover{
+    color: #848484;
+    font-size: 1.6rem;
+  }
+  
+  .nav {
+    padding-right: 5%;
+    flex: 0.9;
+    left: 46vw;
+    width: 100%;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2vw;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: end;
+  }
+  
+  .menu a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu li {
+    padding: 20px;
+  }
+  
+  .menu a:hover {
+    color: #848484;
+    opacity: 0.6;
+  }
+
+  main {
+    height: fit-content;
+  }
+
+  #cx0 {
+    height: 120vh;
+    background-image: url(jaqueline.webp);
+    background-size: cover;
+    display: flex;
+  }
+
+  #cx0 h1 {
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1.4em;
+    color: white;
+    position: relative;
+    top: 50vh;
+    margin-bottom: 10px;
+  }
+
+  #cx0 button {
+    border-radius: 40px;
+    color: black;
+    margin: 0 auto;
+    font-size: 1.2em;
+    align-items: center;
+    top: 65vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  #cx0 button:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+  }
+
+  #cx1 {
+    margin-top: 50px;
+    height: 90vh;
+    background-color: #281139;
+    display: flex;
+  }
+
+  #cx2 {
+    height: 90vh;
+    background-color: #281139;
+    display: flex;
+  }
+
+  #cx3 {
+    height: 90vh;
+    background-color: #281139;
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  div.img {
+    padding: 20px;
+    flex: 50%;
+    display: flex;
+  }
+
+  div.img img{
+    height: 70vh;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  div.text {
+    padding: 20px;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.text h1 {
+    font-size: 1.4em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+
+  div.text p {
+    color: grey;
+    font-size: 1.1em;
+    margin-top: 5%;
+  }
+  
+  footer {
+    height: 55vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+  }
+  
+  footer h1,
+  footer p {
+    color: white;
+  }
+  
+  footer h1 {
+    font-size: 4.5vh;
+  }
+  
+  footer p {
+    font-size: 3vh;
+  }
+  
+  div#sobre {
+    flex: 65%;
+    padding: 6%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  div#links {
+    flex: 35%;
+    padding: 6%;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  #links p {
+    cursor: pointer;
+  }
+  
+  #links p:hover {
+    transition: 0.2s;
+    color: #848484;
+  }
+  div#B p:hover{
+    font-size: 6.2vh;
+    transition: 0.6s;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+  div#cx1,
+  div#cx2 {
+    flex-direction: column;
+    height: 160vh;
+    width: 100%;
+  }
+
+  div#cx3 {
+    flex-direction: column;
+    height: 160vh;
+    width: 100%;
+  }
+
+  div.img img {
+    height: 50vh;
+  }
+
+  li {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  div#sobre {
+    margin-top: 8%;
+    text-align: center;
+  }
+
+  div#links {
+    text-align: center;
+  }
+
+  }
